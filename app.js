@@ -6,6 +6,7 @@ import {generalLimiter} from "./src/middleware/rateLimiter.js";
 import authRoutes from "./src/routes/authRoutes.js";
 import userRoutes from "./src/routes/userRoutes.js";
 import clientRoutes from "./src/routes/clientRoutes.js";
+import projectRoutes from "./src/routes/projectRoutes.js";
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.use(generalLimiter);
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/clients', clientRoutes)
+app.use('/api/projects', projectRoutes)
 
 connect();
 
