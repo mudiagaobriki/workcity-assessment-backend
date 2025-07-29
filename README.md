@@ -32,7 +32,7 @@ npm install
 Create `.env` file:
 ```env
 PORT=3040
-MongoServer=mongodb://localhost:27017/workcity
+MongoServer=mongodb://localhost:27017
 DB_NAME=workcity
 JWT_SECRET=your-super-secret-jwt-key-minimum-256-bits
 NODE_ENV=development
